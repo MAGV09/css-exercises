@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -13,13 +14,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 20px;
+  padding:20px;
 }
 
 .icon {
@@ -33,13 +38,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
+  margin-top: 12px;
 }
 
 .close-button {
   background: #eee;
   border-radius: 50%;
   color: #888;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   height: 24px;
   width: 24px;
@@ -48,6 +55,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  align-self: center;
 }
 
 button {
@@ -66,4 +74,22 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header {
+  font-weight: bolder;
+  display: flex;
+  font-size: 18px;
+}
+.header-container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.close-container {
+  display: flex;
+}
+.text {
+  font-weight: 500;
+  margin-bottom: 15px;
 }
